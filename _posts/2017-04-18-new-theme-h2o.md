@@ -9,6 +9,8 @@ cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-postcover.jpg'
 tags: jekyll 前端开发 设计
 ---
 
+>这篇博文是jekyll-theme-H2O主题[原作者](https://github.com/kaeyleo)对它的一个介绍。
+
 正如我在[微博](http://weibo.com/1374146504/profile?topnav=1&wvr=6)上所说的，使用[Jekyll](http://jekyll.com.cn/)半年以来一直没有令我满意的主题模板，所以开始计划自己写一套好看又好用的主题模板。设计之初就明确了极简主义，风格采用扁平化了，通过卡片式设计来进行区块分明的布局，参考了Medium的ui样式和知乎专栏的视觉风格。
 
 ## H2O
@@ -75,11 +77,9 @@ tags: jekyll 前端开发 设计
 
 在Markdown中你可以这样写：
 
-```
  ```css
 	p { color: red }
  ```
-```
 
 支持语言：
 
