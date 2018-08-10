@@ -27,7 +27,7 @@ avatar: '/assets/img/author_avatar.png'
 search: true
 
 # Night mode
-nightMode: true
+nightMode: false
 
 # Comments 评论功能
 comments:
@@ -76,3 +76,6 @@ permalink: /:year/:month/:day/:title.html
 
 # Plugins
 plugins: [jekyll-paginate]
+
+# 百度统计
+baidu_analysis: 7df116dd7ab0cb0f16455501fb2b8edc
