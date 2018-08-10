@@ -1,9 +1,10 @@
 ---
 layout: post
-title: MathJax Test
+title: Markdown中公式居中问题
+author: kaeyleo
 date: 2017-07-30
-categories: test
-tags: mathjax 
+categories: 工具
+tags: Markdown 
 ---
 
 mathjax in markdown :)
