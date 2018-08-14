@@ -6,7 +6,7 @@ date: 2017-04-18
 author: kaeyleo
 categories: 技术
 cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-postcover.jpg'
-tags: jekyll 前端开发 设计
+tags: Jekyll 前端开发 设计
 ---
 
 >这篇博文是jekyll-theme-H2O主题[原作者](https://github.com/kaeyleo)对它的一个介绍。
