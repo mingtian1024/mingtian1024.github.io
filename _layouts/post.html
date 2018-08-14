@@ -22,6 +22,11 @@
         <span class="post-meta-item"><i class="iconfont icon-author"></i><a href="{{ site.url }}" target="_blank" rel="author">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a></></span>
         <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"><i class="iconfont icon-date"></i>{{ page.date | date_to_string }}</time>
       </div>
+      {% if page.coverMsg %}
+      <div class="post-meta post-cover-source">
+          <span>封面：{{page.coverMsg}}</span>
+      </div>
+      {% endif %}
     </div>
     {% if page.cover %}
     <div class="filter"></div>
