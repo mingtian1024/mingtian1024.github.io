@@ -51,3 +51,9 @@ Git的设置文件为`.gitconfig`,它可以在用户主目录下（全局配置�
 ### 5. 分支
 1. 显示所有本地分支 `git branch`
 2. 列出所有远程分支 `git branch -r`
+3. 列出所有本地分支和远程分支 `git branch -a`
+4. 新建一个分支，与指定的远程分支建立追踪追踪关系 `git branch --track [branch][remote-branch]`
+5. 删除分支 `git branch -d [branch-name]` 
+6. 删除远程分支 `git push origin --delete [branch-name]` `git branch -dr [remote/branch]`
+7. 新建一个分支，并切换到该分支 `git checkout [branch-name]`
+8. 切换到指定分支，并更新工作区
