@@ -19,4 +19,5 @@ tags: GitHub Jekyll
 6. 找到合适的jekyll主题模板，修改_config.yml里的配置
 7. 在`_post`文件夹下发布文章
 8. 本地命令行中 `jekyll server`既可在本地运行
-9. 确认无误后提交到github远程仓库
+9.  `jekyll server --watch`可以看到本地的改动并实时发布
+10. 确认无误后提交到github远程仓库
