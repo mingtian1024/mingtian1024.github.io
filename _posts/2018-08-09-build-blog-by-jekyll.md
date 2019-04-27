@@ -21,3 +21,15 @@ tags: GitHub Jekyll
 8. 本地命令行中 `jekyll server`既可在本地运行
 9.  `jekyll server --watch`可以看到本地的改动并实时发布
 10. 确认无误后提交到github远程仓库
+
+常用命令
+``` bash
+jekyll help # 查看帮助
+jekyll help subcommand # 查看子命令的帮助信息
+
+jekyll build # 构建
+
+jekyll server # 开启本地服务器查看效果
+jekyll server -P 4001 # 指定端口, 默认端口4000
+jekyll server -w # 文件发生变化时，自动重新编译
+```
