@@ -7,11 +7,11 @@ categories: GIT GitHub
 tags: GIT GitHub
 ---
 ### 问题
-公司最近将代码从svn迁移到了gitlab上，需要在电脑上配置gitlab。自己一直用的github，所以配置上有些冲突，
+公司代码从svn迁移到了gitlab上后，需要在电脑上配置gitlab。自己一直用的github，所以配置上有些冲突，
 本文介绍如何在一台电脑上同时配置多个多个代码托管平台，如github、gitlab、gitee
 ### 一. 常规配置流程
 1. 生成ssh key
-```
+``` bash
 $ ssh-keygen -t rsa -C "xxx@yyy.com"
 ```
 2. 一路回车
@@ -26,14 +26,14 @@ $ ssh-keygen -t rsa -C "xxx@yyy.com"
 
 * 全局配置
 可以在任意目录下操作，针对本地所有git仓库都有效，但如果某个仓库单独配置了，则全局配置对此库不生效
-```
+``` bash
 git config --global user.name "name"
 git config --global user.email "email@xxx.com"
 ```
 
 * 针对单个项目配置
 需要在对应项目下操作。
-```
+``` bash
 git config  user.name "name"
 git config  user.email "email@xxx.com"
 ```
