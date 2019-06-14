@@ -10,14 +10,50 @@ tags: GIT GitHub
 公司代码从svn迁移到了gitlab上后，需要在电脑上配置gitlab。自己一直用的github，所以配置上有些冲突，
 本文介绍如何在一台电脑上同时配置多个多个代码托管平台，如github、gitlab、gitee
 ### 一. 配置ssh秘钥
-1. 生成默认ssh key
+* 生成单个默认ssh key
+
+  输入以下命令
+
 ``` bash
 $ ssh-keygen -t rsa -C "xxx@yyy.com"
 ```
 如果是常规配置，连续三个回车即可，依次跳过秘钥文件命名、设置密码、确认密码，
-会生成如下两个文件![秘钥文件](assets/resource/Snipaste_2019-06-15_00-05-50.png)
+会生成如下两个文件![秘钥文件](../assets/resource/Snipaste_2019-06-15_00-05-50.png)
 
-2. 一路回车
+* 生成多个ssh key
+
+  1. 生成秘钥文件
+
+     建议此处输入的邮箱与对应的代码托管平台账号邮箱一致
+
+  ``` bash
+  $ ssh-keygen -t rsa -C "email1@yyy.com"
+  ```
+
+  如果需要配置多个，重复以上步骤。输完以上命令后，不能直接回车，需要指定秘钥名称，之后两次回车跳过密码。
+
+  最后生成多个文件
+
+  ![多个秘钥文件](../assets/resource/Snipaste_2019-06-15_00-11-51.png)
+
+  2. 添加配置文件
+
+     创建名为 *config* 的配置文件，并添加配置：
+
+     ``` bash
+     # github
+         Host github.com
+         HostName github.com
+         PreferredAuthentications publickey
+         IdentityFile ~/.ssh/github-rsa
+     # gitee
+         Host gitee.com
+         HostName gitee.com
+         PreferredAuthentications publickey
+         IdentityFile ~/.ssh/id_rsa
+     ```
+
+     *Host* 和 *HostName* 填对应网站域名，IdentityFile 填写 对应秘钥文件即可。
 
 
 
