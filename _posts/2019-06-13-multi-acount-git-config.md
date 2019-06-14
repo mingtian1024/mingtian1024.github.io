@@ -9,11 +9,14 @@ tags: GIT GitHub
 ### 问题
 公司代码从svn迁移到了gitlab上后，需要在电脑上配置gitlab。自己一直用的github，所以配置上有些冲突，
 本文介绍如何在一台电脑上同时配置多个多个代码托管平台，如github、gitlab、gitee
-### 一. 常规配置流程
-1. 生成ssh key
+### 一. 配置ssh秘钥
+1. 生成默认ssh key
 ``` bash
 $ ssh-keygen -t rsa -C "xxx@yyy.com"
 ```
+如果是常规配置，连续三个回车即可，依次跳过秘钥文件命名、设置密码、确认密码，
+会生成如下两个文件![秘钥文件](assets/resource/Snipaste_2019-06-15_00-05-50.png)
+
 2. 一路回车
 
 
