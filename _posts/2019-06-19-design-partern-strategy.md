@@ -11,9 +11,24 @@ tags: 设计模式
 策略模式中，一个类的行为或其算法可以在运行时更改。
 
 #### 实现
-场景设定：
+
+策略模式涉及到三个角色：
+
+* 环境Context：持有一个Strategy的引用
+
+* 策略接口Strategy：此角色定义具体策略需要实现的接口方法
+
+* 策略实现类：实现具体算法
+
+  ![](https://ae01.alicdn.com/kf/HTB1clLadBKw3KVjSZTEq6AuRpXab.jpg)
+
+
+
+#### 实现举例：
+
 一个动作冒险游戏中，一名骑士有多件武器，弓箭、盾牌、宝剑等，所有的装备都可以使用，但一次只能使用一件装备。
 定义一个接口，表示使用装备的效果，由具体的装备实现
+
 ```Java
 public interface WeaponBehavior {
     void useWeapon();
