@@ -3,6 +3,7 @@ layout: post
 title: '【设计模式】之策略模式'
 date: 2019-06-19
 categories: 设计模式
+cover: 'https://ae01.alicdn.com/kf/HTB1clLadBKw3KVjSZTEq6AuRpXab.jpg'
 tags: 设计模式
 ---
 
