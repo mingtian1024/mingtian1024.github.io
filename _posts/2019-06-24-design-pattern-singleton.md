@@ -83,7 +83,7 @@ public class Singleton3 {
 
 #### 4. 双重校验
 * 懒加载初始化
-* 多线程安全
+* 多线程安全  
 这种方式采用双重校验，多线程下安全且具有较高性能（JDK1.5起才支持）
 volatile关键字是十分必要的，因为：
     ```instance = new Singleton4()```这行代码分三步执行
@@ -114,7 +114,7 @@ public class Singleton4 {
 
 #### 5. 静态内部类 
 * 懒加载初始化
-* 线程安全
+* 线程安全  
 这种方式利用classloader的加载机制来实现懒加载。单例类Singleton5在加载时，SINGLETON_5并不会被初始化，只有显示调用getInstance方法时才会初始化。  
 ```Java
 public class Singleton5 {
@@ -131,7 +131,7 @@ public class Singleton5 {
 
 #### 6. 枚举
 * 非懒加载
-* 线程安全
+* 线程安全  
 避免多线程同步问题，而且还自动支持序列化机制，防止反序列化重新创建新的对象，绝对防止多次实例化。
 ```Java
 public enum Singleton6 {
