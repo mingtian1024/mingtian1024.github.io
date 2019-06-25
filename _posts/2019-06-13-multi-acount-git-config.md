@@ -19,7 +19,9 @@ tags: GIT GitHub
 $ ssh-keygen -t rsa -C "xxx@yyy.com"
 ```
 如果是常规配置，连续三个回车即可，依次跳过秘钥文件命名、设置密码、确认密码，
-会生成如下两个文件![秘钥文件](../assets/resource/Snipaste_2019-06-15_00-05-50.png)
+会生成如下两个文
+
+![秘钥文件](https://i.loli.net/2019/06/25/5d122c624e31350397.png)
 
 * 生成多个ssh key
 
@@ -35,7 +37,7 @@ $ ssh-keygen -t rsa -C "xxx@yyy.com"
 
   最后生成多个文件
 
-  ![多个秘钥文件](../assets/resource/Snipaste_2019-06-15_00-11-51.png)
+  ![多个秘钥文件](https://i.loli.net/2019/06/25/5d122caa668ad51357.png)
 
   2. 添加配置文件
 
