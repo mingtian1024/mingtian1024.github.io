@@ -3,8 +3,7 @@ layout: post
 title: '【转】Git常用命令总结'
 date: 2018-08-14
 categories: Git
-# cover: 'https://i.loli.net/2018/08/09/5b6c5bdabb829.jpg'
-# coverMsg: 2016.6，庐山，如琴湖
+cover: 'https://ae01.alicdn.com/kf/HTB1lxhddLWG3KVjSZPcq6zkbXXaM.jpg'
 tags: Git 
 ---
 
