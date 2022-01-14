@@ -1,6 +1,7 @@
 ---
 layout: post
-title: '在Git中消灭.DS_Store'
+title: '如何在Git中消灭.DS_Store？'
+subtitle: '为所有项目配置一个公共的.gitignore文件'
 date: 2020-08-14
 categories: Git
 cover: 'https://ae01.alicdn.com/kf/HTB1lxhddLWG3KVjSZPcq6zkbXXaM.jpg'

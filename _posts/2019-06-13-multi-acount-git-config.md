@@ -4,8 +4,8 @@ title: '在一台电脑上配置多个代码托管平台账号'
 subtitle: '如何同时配置github、gitlab、gitee账号？'
 date: 2019-06-13
 cover: 'https://kai-you.net/img_words/845118/971be2581931e5699edc70cb1ea467ec.jpg'
-categories: GIT GitHub
-tags: GIT GitHub
+categories: Git GitHub
+tags: Git GitHub
 ---
 ### 问题
 公司代码从svn迁移到了gitlab上后，需要在电脑上配置gitlab。自己一直用的github，所以配置上有些冲突，
