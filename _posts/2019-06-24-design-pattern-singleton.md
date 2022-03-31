@@ -100,9 +100,9 @@ public class Singleton4 {
     private Singleton4() {
     }
     public static Singleton4 getInstance() {
-        if (instance == null){
+        if (instance == null){  // 判断1
             synchronized (Singleton4.class){
-                if (instance == null){
+                if (instance == null){  // 判断2
                     instance = new Singleton4();
                 }
             }
@@ -113,18 +113,21 @@ public class Singleton4 {
 ```
 
 #### 5. 静态内部类 
-* 懒加载初始化
+* 懒加载初始化（Jvm加载类后，并没有将其初始化。直到静态变量被访问时，才使类被初始化（静态变量被赋值））
 * 线程安全  
-这种方式利用classloader的加载机制来实现懒加载。单例类Singleton5在加载时，SINGLETON_5并不会被初始化，只有显示调用getInstance方法时才会初始化。  
+这种方式利用classloader的加载机制来实现懒加载。单例类Singleton5在加载时，INSTANCE并不会被初始化，只有显式调用getInstance方法时才会初始化。  
+> 类的静态变量被初次访问会触发 Java 虚拟机对该类进行初始化，即该类的静态变量的值会变为其初始值而不是默认值。因此，静态方法 getlInstance()被调用的时候Jvm会初始化这个方法所访问的内部静态类 SingletonHolder ，这使得 SingletonHolder的静态变量 INSTANCE 被初始化，从而使 Singleton5  类的唯一实例得以创建。由于类的静态变量只会创建一次，因此 Singleton5（单例类）只会被创建一次。
+
+
 ```Java
 public class Singleton5 {
     private static class SingletonHolder {
-        private static final Singleton5 SINGLETON_5 = new Singleton5();
+        private static final Singleton5 INSTANCE = new Singleton5();
     }
     private Singleton5() {
     }
     private static final Singleton5 getInstance(){
-        return SingletonHolder.SINGLETON_5;
+        return SingletonHolder.INSTANCE;
     }
 }
 ```
@@ -132,6 +135,9 @@ public class Singleton5 {
 #### 6. 枚举
 * 非懒加载
 * 线程安全  
+
+> Singleton6.INSTANCE 初次被引用的时候才 被初始化的仅访问 Singleton 本身（比如上述的 Singleton.class.getNa me（）调用）并不会导致 S ingleton 的唯一 实例被初始化 。
+
 避免多线程同步问题，而且还自动支持序列化机制，防止反序列化重新创建新的对象，绝对防止多次实例化。
 ```Java
 public enum Singleton6 {
