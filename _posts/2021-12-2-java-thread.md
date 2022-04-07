@@ -2,7 +2,7 @@
 layout: post
 title: '详解Java多线程'
 date: 2021-12-04
-subtitle: ''
+subtitle: '介绍Javad多线程核心知识，包括创建线程、线程池、线程安全、线程同步、死锁、JUC等'
 cover: 'https://cdn.nlark.com/yuque/0/2021/jpeg/111742/1616482786410-4a3becf1-fc59-40f7-84f6-a52cfd204730.jpeg'
 categories: 多线程
 tags: Java 多线程
