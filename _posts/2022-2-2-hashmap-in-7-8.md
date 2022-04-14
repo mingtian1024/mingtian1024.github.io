@@ -4,8 +4,8 @@ title: 'Jdk7、8中HashMap的改进'
 date: 2022-2-2
 subtitle: '介绍Java多线程核心知识，包括创建线程、线程池、线程安全、线程同步、死锁、JUC等'
 cover: ';
-categories: 多线程
-tags: Java 多线程
+categories: 集合
+tags: Java 集合
 
 ---
 
@@ -303,5 +303,5 @@ CAS + synchronized
 [Java 8系列之重新认识HashMap【美团技术团队】](https://tech.meituan.com/2016/06/24/java-hashmap.html)
 
  [深入理解HashMap源码【掘金】](https://juejin.cn/post/6926443860965113864#heading-6)
- 
+
  [hashmap循环链表【coolshell】](https://coolshell.cn/articles/9606.html)
